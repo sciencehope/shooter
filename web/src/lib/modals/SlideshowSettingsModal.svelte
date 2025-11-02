@@ -15,7 +15,7 @@
   import { t } from 'svelte-i18n';
   import SettingDropdown from '../components/shared-components/settings/setting-dropdown.svelte';
   import { SlideshowLook, SlideshowNavigation, slideshowStore } from '../stores/slideshow.store';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   const {
     slideshowDelay,
     showProgressBar,
@@ -73,7 +73,7 @@
   };
 </script>
 
-<Modal size="small" title={$t('slideshow_settings')} onClose={() => onClose()}>
+<Modal icon={lemurIconPath} size="small" title={$t('slideshow_settings')} onClose={() => onClose()}>
   <ModalBody>
     <div class="flex flex-col gap-4 text-primary">
       <SettingDropdown

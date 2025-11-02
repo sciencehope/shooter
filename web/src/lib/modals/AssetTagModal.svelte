@@ -7,7 +7,7 @@
   import { t } from 'svelte-i18n';
   import { SvelteSet } from 'svelte/reactivity';
   import Combobox, { type ComboBoxOption } from '../components/shared-components/combobox.svelte';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     onClose: (success?: true) => void;
     assetIds: string[];

@@ -13,6 +13,7 @@
   import { t } from 'svelte-i18n';
   import AlbumListItem from '../components/asset-viewer/album-list-item.svelte';
   import NewAlbumListItem from '../components/shared-components/album-selection/new-album-list-item.svelte';
+  import { lemurIconPath } from '$lib/lemur-icon';
 
   let albums: AlbumResponseDto[] = $state([]);
   let recentAlbums: AlbumResponseDto[] = $state([]);
@@ -146,7 +147,7 @@
   };
 </script>
 
-<Modal title={shared ? $t('add_to_shared_album') : $t('add_to_album')} {onClose} size="small">
+<Modal icon={lemurIconPath} title={shared ? $t('add_to_shared_album') : $t('add_to_album')} {onClose} size="small">
   <ModalBody>
     <div class="mb-2 flex max-h-[400px] flex-col">
       {#if loading}

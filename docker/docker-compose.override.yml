@@ -1,0 +1,5 @@
+services:
+  immich-server:
+    image: immich-server:local
+  immich-machine-learning:
+    image: immich-machine-learning:local

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Modal, ModalBody } from '@immich/ui';
   import { t } from 'svelte-i18n';
+  import { lemurIconPath } from '$lib/lemur-icon';
 
   interface Props {
     onClose: () => void;
@@ -9,7 +10,7 @@
   let { onClose }: Props = $props();
 </script>
 
-<Modal title={$t('deduplication_info')} size="small" {onClose}>
+<Modal icon={lemurIconPath} title={$t('deduplication_info')} size="small" {onClose}>
   <ModalBody>
     <div class="text-sm dark:text-white">
       <p>{$t('deduplication_info_description')}</p>

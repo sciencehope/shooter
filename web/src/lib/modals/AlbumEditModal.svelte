@@ -5,7 +5,7 @@
   import { Button, Field, HStack, Input, Modal, ModalBody, ModalFooter, Textarea } from '@immich/ui';
   import { mdiRenameOutline } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   type Props = {
     album: AlbumResponseDto;
     onClose: (album?: AlbumResponseDto) => void;

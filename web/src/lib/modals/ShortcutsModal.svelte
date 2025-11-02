@@ -2,7 +2,7 @@
   import { Icon, Modal, ModalBody } from '@immich/ui';
   import { mdiInformationOutline } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Shortcuts {
     general: ExplainedShortcut[];
     actions: ExplainedShortcut[];
@@ -49,7 +49,7 @@
   }: Props = $props();
 </script>
 
-<Modal title={$t('keyboard_shortcuts')} size="medium" {onClose}>
+<Modal icon={lemurIconPath} title={$t('keyboard_shortcuts')} size="medium" {onClose}>
   <ModalBody>
     <div class="grid grid-cols-1 gap-4 px-4 pb-4 md:grid-cols-2">
       {#if shortcuts.general.length > 0}

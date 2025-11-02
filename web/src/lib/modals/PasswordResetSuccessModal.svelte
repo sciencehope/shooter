@@ -3,7 +3,7 @@
   import { Button, Code, HStack, IconButton, Modal, ModalBody, ModalFooter, Text } from '@immich/ui';
   import { mdiCheck, mdiContentCopy } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   type Props = {
     onClose: () => void;
     newPassword: string;

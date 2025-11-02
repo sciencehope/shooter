@@ -5,7 +5,7 @@
   import { deleteUserAdmin, type UserAdminResponseDto, type UserResponseDto } from '@immich/sdk';
   import { Alert, Checkbox, ConfirmModal, Field, Input, Label, Text } from '@immich/ui';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   type Props = {
     user: UserResponseDto;
     onClose: (user?: UserAdminResponseDto) => void;
@@ -33,6 +33,7 @@
 </script>
 
 <ConfirmModal
+  icon={lemurIconPath}
   title={$t('delete_user')}
   confirmText={force ? $t('permanently_delete') : $t('delete')}
   onClose={handleClose}

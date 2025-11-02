@@ -3,7 +3,8 @@
   import { Button, HStack, Modal, ModalBody, ModalFooter } from '@immich/ui';
   import { mdiCancel } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
+  
   interface Props {
     onClose: (confirmed?: boolean) => void;
   }

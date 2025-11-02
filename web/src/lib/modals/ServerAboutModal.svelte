@@ -3,6 +3,9 @@
   import { locale } from '$lib/stores/preferences.store';
   import { type ServerAboutResponseDto, type ServerVersionHistoryResponseDto } from '@immich/sdk';
   import { Alert, Label, Modal, ModalBody } from '@immich/ui';
+
+  import ImmichLogo from '$lib/components/shared-components/immich-logo.svelte';
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { DateTime } from 'luxon';
   import { t } from 'svelte-i18n';
 
@@ -15,7 +18,7 @@
   let { onClose, info, versions }: Props = $props();
 </script>
 
-<Modal title={$t('about')} {onClose}>
+<Modal icon={lemurIconPath} title={$t('about')} {onClose}>
   <ModalBody>
     <div class="flex flex-col sm:grid sm:grid-cols-2 gap-4">
       {#if info.sourceRef === 'main' && info.repository === 'immich-app/immich'}

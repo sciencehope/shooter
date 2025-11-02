@@ -9,7 +9,7 @@
   import { mdiCalendarEdit } from '@mdi/js';
   import { DateTime } from 'luxon';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     initialDate?: DateTime;
     initialTimeZone?: string;

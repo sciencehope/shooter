@@ -1,7 +1,7 @@
 <script lang="ts">
   import PurchaseActivationSuccess from '$lib/components/shared-components/purchasing/purchase-activation-success.svelte';
   import PurchaseContent from '$lib/components/shared-components/purchasing/purchase-content.svelte';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { Modal, ModalBody } from '@immich/ui';
 
   interface Props {
@@ -13,7 +13,7 @@
   let showProductActivated = $state(false);
 </script>
 
-<Modal title="" {onClose} size="large">
+<Modal icon={lemurIconPath} title="" {onClose} size="large">
   <ModalBody>
     {#if showProductActivated}
       <PurchaseActivationSuccess onDone={onClose} />

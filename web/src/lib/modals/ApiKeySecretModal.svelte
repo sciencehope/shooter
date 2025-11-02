@@ -3,7 +3,8 @@
   import { Button, HStack, Modal, ModalBody, ModalFooter, Text, Textarea } from '@immich/ui';
   import { mdiKeyVariant } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
+  
   interface Props {
     secret?: string;
     onClose: () => void;

@@ -7,7 +7,7 @@
   import { onMount, tick } from 'svelte';
   import { t } from 'svelte-i18n';
   import ImageThumbnail from '../components/assets/thumbnail/image-thumbnail.svelte';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     personToMerge: PersonResponseDto;
     personToBeMergedInto: PersonResponseDto;
@@ -51,7 +51,7 @@
   });
 </script>
 
-<Modal title="{$t('merge_people')} - {title}" {onClose}>
+<Modal icon={lemurIconPath} title="{$t('merge_people')} - {title}" {onClose}>
   <ModalBody>
     <div class="flex items-center justify-center gap-2 py-4 md:h-36">
       {#if !choosePersonToMerge}

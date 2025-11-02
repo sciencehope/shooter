@@ -18,7 +18,7 @@
   import { onMount } from 'svelte';
   import { t } from 'svelte-i18n';
   import UserAvatar from '../components/shared-components/user-avatar.svelte';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     album: AlbumResponseDto;
     onClose: (result?: { action: 'sharedLink' } | { action: 'sharedUsers'; data: AlbumUserAddDto[] }) => void;
@@ -73,7 +73,7 @@
   };
 </script>
 
-<Modal size="small" title={$t('share')} {onClose}>
+<Modal icon={lemurIconPath} size="small" title={$t('share')} {onClose}>
   <ModalBody>
     {#if Object.keys(selectedUsers).length > 0}
       <div class="mb-2 py-2 sticky">

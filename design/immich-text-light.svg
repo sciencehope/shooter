@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="192"
+   height="192"
+   viewBox="0 0 192 192"
+   fill="none"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="lemurphoto_icon.svg"
+   inkscape:export-filename="lemurphoto_512x512_seleced_only_icon.png"
+   inkscape:export-xdpi="256"
+   inkscape:export-ydpi="256"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffffff"
+     inkscape:zoom="4.34375"
+     inkscape:cx="95.884892"
+     inkscape:cy="88.633094"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <!-- Modern gradient background -->
+  <defs
+     id="defs2">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#667eea;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#764ba2;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+  </defs>
+  <!-- Flat, rounded-square background with gradient -->
+  <rect
+     x="8"
+     y="8"
+     width="176"
+     height="176"
+     rx="36"
+     fill="url(#bgGradient)"
+     id="rect2"
+     ry="0" />
+  <!-- Camera focus corners (shorter, thinner lines) - white for contrast -->
+  <!-- Top-left corner -->
+  <path
+     d="M24 36 v32 h8 v-24 h24 v-8 h-32 z"
+     fill="#ffffff"
+     id="path2" />
+  <!-- Top-right corner -->
+  <path
+     d="M168 36 v32 h-8 v-24 h-24 v-8 h32 z"
+     fill="#ffffff"
+     id="path3" />
+  <!-- Bottom-left corner -->
+  <path
+     d="M24 156 v-32 h8 v24 h24 v8 h-32 z"
+     fill="#ffffff"
+     id="path4" />
+  <!-- Bottom-right corner -->
+  <path
+     d="M168 156 v-32 h-8 v24 h-24 v8 h32 z"
+     fill="#ffffff"
+     id="path5" />
+  <!-- Lemur face: centered properly with subtle shadow -->
+  <ellipse
+     cx="96"
+     cy="96"
+     rx="54"
+     ry="44"
+     fill="#f8f9fa"
+     stroke="#2c3e50"
+     stroke-width="3"
+     id="ellipse5" />
+  <!-- Eyes with modern styling -->
+  <ellipse
+     cx="72"
+     cy="106"
+     rx="13"
+     ry="16"
+     fill="#ffffff"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse6" />
+  <ellipse
+     cx="120"
+     cy="106"
+     rx="13"
+     ry="16"
+     fill="#ffffff"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse7" />
+  <!-- Pupils with vibrant color -->
+  <circle
+     cx="72"
+     cy="112"
+     r="5"
+     fill="#3498db"
+     stroke="#2c3e50"
+     stroke-width="1.5"
+     id="circle7" />
+  <circle
+     cx="120"
+     cy="112"
+     r="5"
+     fill="#3498db"
+     stroke="#2c3e50"
+     stroke-width="1.5"
+     id="circle8" />
+  <!-- Nose -->
+  <ellipse
+     cx="96"
+     cy="126"
+     rx="7"
+     ry="4"
+     fill="#2c3e50"
+     id="ellipse8" />
+  <!-- Mask patches with subtle opacity -->
+  <ellipse
+     cx="54"
+     cy="96"
+     rx="10"
+     ry="18"
+     fill="#2c3e50"
+     opacity="0.6"
+     id="ellipse9" />
+  <ellipse
+     cx="138"
+     cy="96"
+     rx="10"
+     ry="18"
+     fill="#2c3e50"
+     opacity="0.6"
+     id="ellipse10" />
+  <!-- Ears -->
+  <ellipse
+     cx="40"
+     cy="76"
+     rx="14"
+     ry="20"
+     fill="#f8f9fa"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse11" />
+  <ellipse
+     cx="152"
+     cy="76"
+     rx="14"
+     ry="20"
+     fill="#f8f9fa"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse12"
+     inkscape:export-filename="lemurphoto_128x128_seleced_only_icon.png"
+     inkscape:export-xdpi="69.82"
+     inkscape:export-ydpi="69.82" />
+</svg>

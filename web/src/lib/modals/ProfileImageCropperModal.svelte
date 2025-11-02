@@ -7,7 +7,7 @@
   import { onMount } from 'svelte';
   import { t } from 'svelte-i18n';
   import PhotoViewer from '../components/asset-viewer/photo-viewer.svelte';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     asset: AssetResponseDto;
     onClose: () => void;
@@ -79,7 +79,7 @@
   };
 </script>
 
-<Modal size="small" title={$t('set_profile_picture')} {onClose}>
+<Modal icon={lemurIconPath} size="small" title={$t('set_profile_picture')} {onClose}>
   <ModalBody>
     <div class="flex place-items-center items-center justify-center">
       <div

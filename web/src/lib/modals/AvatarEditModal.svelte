@@ -5,6 +5,7 @@
   import { deleteProfileImage, updateMyUser, UserAvatarColor } from '@immich/sdk';
   import { Modal, ModalBody, toastManager } from '@immich/ui';
   import { t } from 'svelte-i18n';
+  import { lemurIconPath } from '$lib/lemur-icon';
 
   interface Props {
     onClose: () => void;
@@ -30,7 +31,7 @@
   };
 </script>
 
-<Modal title={$t('select_avatar_color')} size="small" {onClose}>
+<Modal icon={lemurIconPath} title={$t('select_avatar_color')} size="small" {onClose}>
   <ModalBody>
     <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 place-items-center">
       {#each colors as color (color)}

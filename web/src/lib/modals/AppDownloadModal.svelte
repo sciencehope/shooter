@@ -1,13 +1,15 @@
 <script lang="ts">
   import { appStoreBadge, fdroidBadge, Modal, ModalBody, playStoreBadge, Text } from '@immich/ui';
   import { t } from 'svelte-i18n';
+  import { lemurIconPath } from '$lib/lemur-icon';
+
   interface Props {
     onClose: () => void;
   }
   let { onClose }: Props = $props();
 </script>
 
-<Modal title={$t('app_download_links')} size="large" {onClose}>
+<Modal icon={lemurIconPath} title={$t('app_download_links')} size="large" {onClose}>
   <ModalBody>
     <div class="sm:grid sm:grid-cols-2 gap-5">
       <div class="flex flex-col place-items-start">

@@ -1,4 +1,6 @@
 <script lang="ts">
+
+  import Logo from '$lib/components/Logo.svelte';
   import ImmichLogo from '$lib/components/shared-components/immich-logo.svelte';
   import { OnboardingRole } from '$lib/models/onboarding-role';
   import { serverConfig } from '$lib/stores/server-config.store';

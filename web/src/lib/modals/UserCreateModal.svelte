@@ -19,7 +19,7 @@
     Switch,
   } from '@immich/ui';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     onClose: (user?: UserAdminResponseDto) => void;
   }
@@ -84,7 +84,7 @@
   };
 </script>
 
-<Modal title={$t('create_new_user')} {onClose} size="small">
+<Modal icon={lemurIconPath} title={$t('create_new_user')} {onClose} size="small">
   <ModalBody>
     <form onsubmit={onSubmit} autocomplete="off" id="create-new-user-form">
       {#if error}

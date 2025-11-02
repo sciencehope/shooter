@@ -1,29 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Flower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 792 792" style="enable-background:new 0 0 792 792;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FA2921;}
-	.st1{fill:#ED79B5;}
-	.st2{fill:#FFB400;}
-	.st3{fill:#1E83F7;}
-	.st4{fill:#18C249;}
-</style>
-<g id="Flower_00000077325900055813483940000000694823054982625702_">
-	<path class="st0" d="M375.48,267.63c38.64,34.21,69.78,70.87,89.82,105.42c34.42-61.56,57.42-134.71,57.71-181.3
-		c0-0.33,0-0.63,0-0.91c0-68.94-68.77-95.77-128.01-95.77s-128.01,26.83-128.01,95.77c0,0.94,0,2.2,0,3.72
-		C300.01,209.24,339.15,235.47,375.48,267.63z"/>
-	<path class="st1" d="M164.7,455.63c24.15-26.87,61.2-55.99,103.01-80.61c44.48-26.18,88.97-44.47,128.02-52.84
-		c-47.91-51.76-110.37-96.24-154.6-110.91c-0.31-0.1-0.6-0.19-0.86-0.28c-65.57-21.3-112.34,35.81-130.64,92.15
-		c-18.3,56.34-14.04,130.04,51.53,151.34C162.05,454.77,163.25,455.16,164.7,455.63z"/>
-	<path class="st2" d="M681.07,302.19c-18.3-56.34-65.07-113.45-130.64-92.15c-0.9,0.29-2.1,0.68-3.54,1.15
-		c-3.75,35.93-16.6,81.27-35.96,125.76c-20.59,47.32-45.84,88.27-72.51,118c69.18,13.72,145.86,12.98,190.26-1.14
-		c0.31-0.1,0.6-0.2,0.86-0.28C695.11,432.22,699.37,358.52,681.07,302.19z"/>
-	<path class="st3" d="M336.54,510.71c-11.15-50.39-14.8-98.36-10.7-138.08c-64.03,29.57-125.63,75.23-153.26,112.76
-		c-0.19,0.26-0.37,0.51-0.53,0.73c-40.52,55.78-0.66,117.91,47.27,152.72c47.92,34.82,119.33,53.54,159.86-2.24
-		c0.56-0.76,1.3-1.78,2.19-3.01C363.28,602.32,347.02,558.08,336.54,510.71z"/>
-	<path class="st4" d="M617.57,482.52c-35.33,7.54-82.42,9.33-130.72,4.66c-51.37-4.96-98.11-16.32-134.63-32.5
-		c8.33,70.03,32.73,142.73,59.88,180.6c0.19,0.26,0.37,0.51,0.53,0.73c40.52,55.78,111.93,37.06,159.86,2.24
-		c47.92-34.82,87.79-96.95,47.27-152.72C619.2,484.77,618.46,483.75,617.57,482.52z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="192"
+   height="192"
+   viewBox="0 0 192 192"
+   fill="none"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="lemurphoto_icon.svg"
+   inkscape:export-filename="lemurphoto_512x512_seleced_only_icon.png"
+   inkscape:export-xdpi="256"
+   inkscape:export-ydpi="256"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffffff"
+     inkscape:zoom="4.34375"
+     inkscape:cx="95.884892"
+     inkscape:cy="88.633094"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <!-- Modern gradient background -->
+  <defs
+     id="defs2">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#667eea;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#764ba2;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+  </defs>
+  <!-- Flat, rounded-square background with gradient -->
+  <rect
+     x="8"
+     y="8"
+     width="176"
+     height="176"
+     rx="36"
+     fill="url(#bgGradient)"
+     id="rect2"
+     ry="0" />
+  <!-- Camera focus corners (shorter, thinner lines) - white for contrast -->
+  <!-- Top-left corner -->
+  <path
+     d="M24 36 v32 h8 v-24 h24 v-8 h-32 z"
+     fill="#ffffff"
+     id="path2" />
+  <!-- Top-right corner -->
+  <path
+     d="M168 36 v32 h-8 v-24 h-24 v-8 h32 z"
+     fill="#ffffff"
+     id="path3" />
+  <!-- Bottom-left corner -->
+  <path
+     d="M24 156 v-32 h8 v24 h24 v8 h-32 z"
+     fill="#ffffff"
+     id="path4" />
+  <!-- Bottom-right corner -->
+  <path
+     d="M168 156 v-32 h-8 v24 h-24 v8 h32 z"
+     fill="#ffffff"
+     id="path5" />
+  <!-- Lemur face: centered properly with subtle shadow -->
+  <ellipse
+     cx="96"
+     cy="96"
+     rx="54"
+     ry="44"
+     fill="#f8f9fa"
+     stroke="#2c3e50"
+     stroke-width="3"
+     id="ellipse5" />
+  <!-- Eyes with modern styling -->
+  <ellipse
+     cx="72"
+     cy="106"
+     rx="13"
+     ry="16"
+     fill="#ffffff"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse6" />
+  <ellipse
+     cx="120"
+     cy="106"
+     rx="13"
+     ry="16"
+     fill="#ffffff"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse7" />
+  <!-- Pupils with vibrant color -->
+  <circle
+     cx="72"
+     cy="112"
+     r="5"
+     fill="#3498db"
+     stroke="#2c3e50"
+     stroke-width="1.5"
+     id="circle7" />
+  <circle
+     cx="120"
+     cy="112"
+     r="5"
+     fill="#3498db"
+     stroke="#2c3e50"
+     stroke-width="1.5"
+     id="circle8" />
+  <!-- Nose -->
+  <ellipse
+     cx="96"
+     cy="126"
+     rx="7"
+     ry="4"
+     fill="#2c3e50"
+     id="ellipse8" />
+  <!-- Mask patches with subtle opacity -->
+  <ellipse
+     cx="54"
+     cy="96"
+     rx="10"
+     ry="18"
+     fill="#2c3e50"
+     opacity="0.6"
+     id="ellipse9" />
+  <ellipse
+     cx="138"
+     cy="96"
+     rx="10"
+     ry="18"
+     fill="#2c3e50"
+     opacity="0.6"
+     id="ellipse10" />
+  <!-- Ears -->
+  <ellipse
+     cx="40"
+     cy="76"
+     rx="14"
+     ry="20"
+     fill="#f8f9fa"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse11" />
+  <ellipse
+     cx="152"
+     cy="76"
+     rx="14"
+     ry="20"
+     fill="#f8f9fa"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="ellipse12"
+     inkscape:export-filename="lemurphoto_128x128_seleced_only_icon.png"
+     inkscape:export-xdpi="69.82"
+     inkscape:export-ydpi="69.82" />
 </svg>

@@ -15,6 +15,7 @@
   import { mdiDotsVertical } from '@mdi/js';
   import { onMount } from 'svelte';
   import { t } from 'svelte-i18n';
+  import { lemurIconPath } from '$lib/lemur-icon';
 
   interface Props {
     album: AlbumResponseDto;
@@ -97,7 +98,7 @@
   };
 </script>
 
-<Modal title={$t('options')} size="small" {onClose}>
+<Modal icon={lemurIconPath} title={$t('options')} size="small" {onClose}>
   <ModalBody>
     <section class="immich-scrollbar max-h-[400px] overflow-y-auto pb-4">
       {#each [{ user: album.owner, role: 'owner' }, ...album.albumUsers] as { user, role } (user.id)}

@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { Card, CardBody, CardHeader, Heading, immichLogo, Logo, VStack } from '@immich/ui';
+  import { Card, CardBody, CardHeader, Heading, immichLogo, VStack } from '@immich/ui';
   import type { Snippet } from 'svelte';
+  import Logo from '$lib/components/Logo.svelte';
+
   interface Props {
     title?: string;
     children?: Snippet;
@@ -13,7 +15,7 @@
 <section class="min-w-dvw flex min-h-dvh items-center justify-center relative">
   <div class="absolute -z-10 w-full h-full flex place-items-center place-content-center">
     <img
-      src={immichLogo}
+      src="/favicon.svg"
       class="max-w-(--breakpoint-md) mx-auto h-full mb-2 antialiased overflow-hidden"
       alt="Immich logo"
     />

@@ -1,0 +1,6 @@
+services:
+  database:
+    volumes:
+      - shutter-db-data:/var/lib/postgresql/data
+volumes:
+  shutter-db-data:

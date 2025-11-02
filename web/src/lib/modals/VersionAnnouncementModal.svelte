@@ -2,7 +2,7 @@
   import FormatMessage from '$lib/elements/FormatMessage.svelte';
   import { Button, Modal, ModalBody, ModalFooter } from '@immich/ui';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   type Props = {
     serverVersion: string;
     releaseVersion: string;
@@ -12,7 +12,7 @@
   const { serverVersion, releaseVersion, onClose }: Props = $props();
 </script>
 
-<Modal size="small" title="🎉 {$t('new_version_available')}" {onClose} icon={false}>
+<Modal icon={lemurIconPath} size="small" title="🎉 {$t('new_version_available')}" {onClose} icon={false}>
   <ModalBody>
     <div>
       <FormatMessage key="version_announcement_message">

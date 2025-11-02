@@ -20,7 +20,7 @@
   } from '@immich/ui';
   import { mdiAccountEditOutline } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     user: UserAdminResponseDto;
     onClose: (data?: UserAdminResponseDto) => void;

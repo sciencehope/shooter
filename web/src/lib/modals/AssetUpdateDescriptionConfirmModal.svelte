@@ -2,7 +2,8 @@
   import { ConfirmModal, Field, Textarea } from '@immich/ui';
   import { mdiText } from '@mdi/js';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
+  
   type Props = {
     onClose: (description?: string) => void;
   };

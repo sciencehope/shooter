@@ -17,7 +17,8 @@
   import { mdiClose, mdiKeyVariant } from '@mdi/js';
   import { onMount } from 'svelte';
   import { t } from 'svelte-i18n';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
+  
   const matches = (value: string) => {
     value = value.toLowerCase();
     return ([title, items]: [string, Permission[]]) => {
