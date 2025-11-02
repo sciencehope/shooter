@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import SettingSelect from '$lib/components/shared-components/settings/setting-select.svelte';
   import DateInput from '$lib/elements/DateInput.svelte';
   import type { MapSettings } from '$lib/stores/preferences.store';
@@ -23,7 +24,7 @@
   };
 </script>
 
-<Modal title={$t('map_settings')} {onClose} size="small">
+<Modal icon={lemurIconPath} title={$t('map_settings')} {onClose} size="small">
   <ModalBody>
     <form {onsubmit} id="map-settings-form">
       <Stack gap={4}>

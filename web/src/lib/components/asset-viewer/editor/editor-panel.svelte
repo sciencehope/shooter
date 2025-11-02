@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { shortcut } from '$lib/actions/shortcut';
   import { editTypes, showCancelConfirmDialog } from '$lib/stores/asset-editor.store';
   import { websocketEvents } from '$lib/stores/websocket';
@@ -74,7 +75,7 @@
 </section>
 
 {#if $showCancelConfirmDialog}
-  <ConfirmModal
+  <ConfirmModal icon={lemurIconPath}
     title={$t('editor_close_without_save_title')}
     prompt={$t('editor_close_without_save_prompt')}
     confirmColor="danger"

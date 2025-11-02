@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { goto } from '$app/navigation';
   import empty3Url from '$lib/assets/empty-3.svg';
   import UserPageLayout from '$lib/components/layouts/user-page-layout.svelte';
@@ -30,13 +31,13 @@
     handlePromiseError(goto(AppRoute.PHOTOS));
   }
 
-  let timelineManager = $state<TimelineManager>() as TimelineManager;
+  const timelineManager = new TimelineManager();
   const options = { isTrashed: true };
 
   const assetInteraction = new AssetInteraction();
 
   const handleEmptyTrash = async () => {
-    const isConfirmed = await modalManager.showDialog({ prompt: $t('empty_trash_confirmation') });
+    const isConfirmed = await modalManager.showDialog({  prompt: $t('empty_trash_confirmation') , icon: lemurIconPath });
     if (!isConfirmed) {
       return;
     }
@@ -50,7 +51,7 @@
   };
 
   const handleRestoreTrash = async () => {
-    const isConfirmed = await modalManager.showDialog({ prompt: $t('assets_restore_confirmation') });
+    const isConfirmed = await modalManager.showDialog({  prompt: $t('assets_restore_confirmation') , icon: lemurIconPath });
     if (!isConfirmed) {
       return;
     }

@@ -11,7 +11,7 @@
 
 <Modal icon={lemurIconPath} title={$t('app_download_links')} size="large" {onClose}>
   <ModalBody>
-    <div class="sm:grid sm:grid-cols-2 gap-5">
+    <!-- <div class="sm:grid sm:grid-cols-2 gap-5">
       <div class="flex flex-col place-items-start">
         <Text>Google Play</Text>
         <a
@@ -36,6 +36,7 @@
           <img class="w-[200px] mt-2" alt="Get it on F-Droid" src={fdroidBadge} />
         </a>
       </div>
-    </div>
+    </div> -->
+    <p>Comming Soon</p>
   </ModalBody>
 </Modal>

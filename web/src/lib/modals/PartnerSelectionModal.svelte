@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import UserAvatar from '$lib/components/shared-components/user-avatar.svelte';
   import { getPartners, PartnerDirection, searchUsers, type UserResponseDto } from '@immich/sdk';
   import { Button, Modal, ModalBody, ModalFooter } from '@immich/ui';
@@ -34,7 +35,7 @@
   };
 </script>
 
-<Modal title={$t('add_partner')} {onClose} size="small">
+<Modal icon={lemurIconPath} title={$t('add_partner')} {onClose} size="small">
   <ModalBody>
     <div class="immich-scrollbar max-h-[300px] overflow-y-auto">
       {#if availableUsers.length > 0}

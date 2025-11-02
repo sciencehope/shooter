@@ -9,7 +9,8 @@
 <p>{$t('mobile_app_download_onboarding_note')}</p>
 
 <HStack>
-  <Button
+  <p>Coming Soon</p>
+  <!-- <Button
     size="medium"
     shape="semi-round"
     fullWidth
@@ -27,5 +28,5 @@
     leadingIcon={mdiLinkEdit}
   >
     {$t('obtainium_configurator')}
-  </Button>
+  </Button> -->
 </HStack>

@@ -20,7 +20,7 @@
         <FormatMessage key="admin.authentication_settings_reenable">
           {#snippet children({ message })}
             <a
-              href="https://docs.immich.app/administration/server-commands"
+              href="https://docs.shooter.sciencehope.com/administration/server-commands"
               rel="noreferrer"
               target="_blank"
               class="underline"

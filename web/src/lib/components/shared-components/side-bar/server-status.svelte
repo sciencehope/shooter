@@ -30,7 +30,7 @@
     userInteraction.aboutInfo = info;
     userInteraction.versions = versions;
   });
-  let isMain = $derived(info?.sourceRef === 'main' && info.repository === 'immich-app/immich');
+  let isMain = $derived(info?.sourceRef === 'main' && info.repository === 'sciencehope/shooter');
   let version = $derived(
     $serverVersion ? `v${$serverVersion.major}.${$serverVersion.minor}.${$serverVersion.patch}` : null,
   );

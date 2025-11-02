@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import MenuOption from '$lib/components/shared-components/context-menu/menu-option.svelte';
   import { AssetAction } from '$lib/constants';
   import { keepThisDeleteOthers } from '$lib/utils/asset-utils';
@@ -18,11 +19,11 @@
   let { stack, asset, onAction }: Props = $props();
 
   const handleKeepThisDeleteOthers = async () => {
-    const isConfirmed = await modalManager.showDialog({
+    const isConfirmed = await modalManager.showDialog({ 
       title: $t('keep_this_delete_others'),
       prompt: $t('confirm_keep_this_delete_others'),
       confirmText: $t('delete_others'),
-    });
+     icon: lemurIconPath, });
 
     if (!isConfirmed) {
       return;

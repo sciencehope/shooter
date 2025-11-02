@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { handleError } from '$lib/utils/handle-error';
   import { deleteAllSessions, deleteSession, getSessions, type SessionResponseDto } from '@immich/sdk';
   import { Button, modalManager, toastManager } from '@immich/ui';
@@ -17,7 +18,7 @@
   let otherSessions = $derived(devices.filter((device) => !device.current));
 
   const handleDelete = async (device: SessionResponseDto) => {
-    const isConfirmed = await modalManager.showDialog({ prompt: $t('logout_this_device_confirmation') });
+    const isConfirmed = await modalManager.showDialog({  prompt: $t('logout_this_device_confirmation') , icon: lemurIconPath });
     if (!isConfirmed) {
       return;
     }
@@ -33,7 +34,7 @@
   };
 
   const handleDeleteAll = async () => {
-    const isConfirmed = await modalManager.showDialog({ prompt: $t('logout_all_device_confirmation') });
+    const isConfirmed = await modalManager.showDialog({  prompt: $t('logout_all_device_confirmation') , icon: lemurIconPath });
     if (!isConfirmed) {
       return;
     }

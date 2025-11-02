@@ -142,7 +142,7 @@
         {$t('purchase_panel_title')}
       </h1>
 
-      <div class="text-gray-800 dark:text-white my-4">
+      <!-- <div class="text-gray-800 dark:text-white my-4">
         <p>
           {$t('purchase_panel_info_1')}
         </p>
@@ -150,7 +150,7 @@
         <p>
           {$t('purchase_panel_info_2')}
         </p>
-      </div>
+      </div> -->
 
       <Button shape="round" class="mt-2" fullWidth onclick={openPurchaseModal}
         >{$t('purchase_button_buy_immich')}</Button

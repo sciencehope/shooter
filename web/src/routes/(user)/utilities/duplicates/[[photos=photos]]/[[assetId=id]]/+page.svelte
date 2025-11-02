@@ -1,4 +1,6 @@
+
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { shortcuts } from '$lib/actions/shortcut';
@@ -74,7 +76,7 @@
   let hasDuplicates = $derived(duplicates.length > 0);
   const withConfirmation = async (callback: () => Promise<void>, prompt?: string, confirmText?: string) => {
     if (prompt && confirmText) {
-      const isConfirmed = await modalManager.showDialog({ prompt, confirmText });
+      const isConfirmed = await modalManager.showDialog({  prompt, confirmText , icon: lemurIconPath });
       if (!isConfirmed) {
         return;
       }

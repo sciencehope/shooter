@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { ActionQueryParameterValue, AppRoute, QueryParameter } from '$lib/constants';
@@ -62,7 +63,7 @@
   };
 
   const handleMerge = async () => {
-    const isConfirm = await modalManager.showDialog({ prompt: $t('merge_people_prompt') });
+    const isConfirm = await modalManager.showDialog({  prompt: $t('merge_people_prompt') , icon: lemurIconPath });
     if (!isConfirm) {
       return;
     }

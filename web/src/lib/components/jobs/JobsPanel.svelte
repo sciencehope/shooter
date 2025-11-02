@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { featureFlags } from '$lib/stores/server-config.store';
   import { getJobName } from '$lib/utils';
   import { handleError } from '$lib/utils/handle-error';
@@ -42,9 +43,9 @@
 
   const handleConfirmCommand = async (jobId: JobName, dto: JobCommandDto) => {
     if (dto.force) {
-      const isConfirmed = await modalManager.showDialog({
+      const isConfirmed = await modalManager.showDialog({ 
         prompt: $t('admin.confirm_reprocess_all_faces'),
-      });
+       icon: lemurIconPath, });
 
       if (isConfirmed) {
         await handleCommand(jobId, { command: JobCommand.Start, force: true });

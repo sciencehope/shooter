@@ -1,4 +1,6 @@
+
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { dateFormats } from '$lib/constants';
   import ApiKeyModal from '$lib/modals/ApiKeyModal.svelte';
   import ApiKeySecretModal from '$lib/modals/ApiKeySecretModal.svelte';
@@ -69,7 +71,7 @@
   };
 
   const handleDelete = async (key: ApiKeyResponseDto) => {
-    const isConfirmed = await modalManager.showDialog({ prompt: $t('delete_api_key_prompt') });
+    const isConfirmed = await modalManager.showDialog({  prompt: $t('delete_api_key_prompt') , icon: lemurIconPath });
     if (!isConfirmed) {
       return;
     }

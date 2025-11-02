@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import SettingInputField from '$lib/components/shared-components/settings/setting-input-field.svelte';
   import SettingSelect from '$lib/components/shared-components/settings/setting-select.svelte';
   import { SettingInputFieldType } from '$lib/constants';
@@ -31,7 +32,7 @@
   let { onClose }: Props = $props();
 </script>
 
-<Modal title={$t('obtainium_configurator')} size="medium" {onClose}>
+<Modal icon={lemurIconPath} title={$t('obtainium_configurator')} size="medium" {onClose}>
   <ModalBody>
     <div>
       <Text color="muted" size="small">

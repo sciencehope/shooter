@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import Combobox, { type ComboBoxOption } from '$lib/components/shared-components/combobox.svelte';
   import { handleError } from '$lib/utils/handle-error';
   import { createJob, ManualJobName } from '@immich/sdk';
@@ -40,7 +41,7 @@
   };
 </script>
 
-<ConfirmModal
+<ConfirmModal icon={lemurIconPath}
   confirmColor="primary"
   title={$t('admin.create_job')}
   disabled={!selectedJob}

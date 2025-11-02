@@ -12,14 +12,14 @@
   const { serverVersion, releaseVersion, onClose }: Props = $props();
 </script>
 
-<Modal icon={lemurIconPath} size="small" title="🎉 {$t('new_version_available')}" {onClose} icon={false}>
+<Modal size="small" title="🎉 {$t('new_version_available')}" {onClose} icon={false}>
   <ModalBody>
     <div>
       <FormatMessage key="version_announcement_message">
         {#snippet children({ tag, message })}
           {#if tag === 'link'}
             <span class="font-medium underline">
-              <a href="https://github.com/immich-app/immich/releases/latest" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/sciencehope/shooter/releases/latest" target="_blank" rel="noopener noreferrer">
                 {message}
               </a>
             </span>

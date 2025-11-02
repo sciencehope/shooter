@@ -1,4 +1,6 @@
+
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import UserPageLayout from '$lib/components/layouts/user-page-layout.svelte';
@@ -31,11 +33,11 @@
   });
 
   const handleDeleteLink = async (id: string) => {
-    const isConfirmed = await modalManager.showDialog({
+    const isConfirmed = await modalManager.showDialog({ 
       title: $t('delete_shared_link'),
       prompt: $t('confirm_delete_shared_link'),
       confirmText: $t('delete'),
-    });
+     icon: lemurIconPath, });
 
     if (!isConfirmed) {
       return;

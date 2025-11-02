@@ -32,7 +32,7 @@
   import { t } from 'svelte-i18n';
   import { fade, slide } from 'svelte/transition';
   import type { PageData } from './$types';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   interface Props {
     data: PageData;
   }
@@ -212,6 +212,7 @@
 
     const isConfirmed = await modalManager.showDialog({
       prompt: $t('admin.confirm_delete_library', { values: { library: library.name } }),
+      icon: lemurIconPath,
     });
 
     if (!isConfirmed) {
@@ -223,6 +224,7 @@
     if (assetCount > 0) {
       const isConfirmed = await modalManager.showDialog({
         prompt: $t('admin.confirm_delete_library_assets', { values: { count: assetCount } }),
+        icon: lemurIconPath,
       });
       if (!isConfirmed) {
         return;

@@ -1,6 +1,7 @@
+
 <script lang="ts">
   import { fade } from 'svelte/transition';
-
+  import { lemurIconPath } from '$lib/lemur-icon';
   import PurchaseContent from '$lib/components/shared-components/purchasing/purchase-content.svelte';
   import SettingSwitch from '$lib/components/shared-components/settings/setting-switch.svelte';
   import { dateFormats } from '$lib/constants';
@@ -62,11 +63,11 @@
 
   const removeIndividualProductKey = async () => {
     try {
-      const isConfirmed = await modalManager.showDialog({
+      const isConfirmed = await modalManager.showDialog({ 
         title: $t('purchase_remove_product_key'),
         prompt: $t('purchase_remove_product_key_prompt'),
         confirmText: $t('remove'),
-      });
+       icon: lemurIconPath, });
 
       if (!isConfirmed) {
         return;
@@ -81,11 +82,11 @@
 
   const removeServerProductKey = async () => {
     try {
-      const isConfirmed = await modalManager.showDialog({
+      const isConfirmed = await modalManager.showDialog({ 
         title: $t('purchase_remove_server_product_key'),
         prompt: $t('purchase_remove_server_product_key_prompt'),
         confirmText: $t('remove'),
-      });
+       icon: lemurIconPath, });
 
       if (!isConfirmed) {
         return;

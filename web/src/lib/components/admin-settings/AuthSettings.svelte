@@ -82,7 +82,7 @@
               <FormatMessage key="admin.oauth_settings_more_details">
                 {#snippet children({ message })}
                   <a
-                    href="https://docs.immich.app/administration/oauth"
+                    href="https://docs.shooter.sciencehope.com/administration/oauth"
                     class="underline"
                     target="_blank"
                     rel="noreferrer"

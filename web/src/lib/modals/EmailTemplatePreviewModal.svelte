@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { Modal, ModalBody } from '@immich/ui';
   import { t } from 'svelte-i18n';
 
@@ -10,7 +11,7 @@
   let { html, onClose }: Props = $props();
 </script>
 
-<Modal title={$t('admin.template_email_preview')} {onClose} size="giant">
+<Modal icon={lemurIconPath} title={$t('admin.template_email_preview')} {onClose} size="giant">
   <ModalBody>
     <div class="relative w-full h-240 overflow-hidden">
       <iframe

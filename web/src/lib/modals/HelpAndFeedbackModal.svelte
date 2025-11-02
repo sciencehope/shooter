@@ -27,7 +27,7 @@
       </div>
 
       <div>
-        <a href="https://github.com/immich-app/immich/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/sciencehope/shooter/" target="_blank" rel="noreferrer">
           <Icon icon={mdiGithub} size="1.5em" class="inline-block" />
           <p class="font-medium text-primary text-sm underline inline-block" id="github-label">
             {$t('source')}
@@ -45,7 +45,7 @@
       </div>
 
       <div>
-        <a href="https://github.com/immich-app/immich/issues/new/choose" target="_blank" rel="noreferrer">
+        <a href="https://github.com/sciencehope/shooter/issues/new/choose" target="_blank" rel="noreferrer">
           <Icon icon={mdiBugOutline} size="1.5em" class="inline-block" />
           <p class="font-medium text-primary text-sm underline inline-block" id="github-label">
             {$t('bugs_and_feature_requests')}

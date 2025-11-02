@@ -79,7 +79,7 @@
             </a>
 
             <a
-              href="https://github.com/immich-app/immich/releases"
+              href="https://github.com/sciencehope/shooter/releases"
               target="_blank"
               rel="noopener noreferrer"
               class="flex grow basis-0 justify-center p-4"

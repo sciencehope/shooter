@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { lemurIconPath } from '$lib/lemur-icon';
   import { Button, HStack, Modal, ModalBody, ModalFooter } from '@immich/ui';
   import { t } from 'svelte-i18n';
 
@@ -11,7 +12,7 @@
   let { location, assetCount, onClose }: Props = $props();
 </script>
 
-<Modal title={$t('confirm')} size="small" {onClose}>
+<Modal icon={lemurIconPath} title={$t('confirm')} size="small" {onClose}>
   <ModalBody>
     <p>
       {$t('update_location_action_prompt', {

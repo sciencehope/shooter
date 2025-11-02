@@ -1,5 +1,6 @@
 import { goto } from '$app/navigation';
 import { AppRoute } from '$lib/constants';
+import { lemurIconPath } from '$lib/lemur-icon';
 import {
   AlbumFilter,
   AlbumGroupBy,
@@ -16,7 +17,6 @@ import { modalManager } from '@immich/ui';
 import { orderBy } from 'lodash-es';
 import { t } from 'svelte-i18n';
 import { get } from 'svelte/store';
-
 /**
  * -------------------------
  * Albums General Management
@@ -213,7 +213,7 @@ export const confirmAlbumDelete = async (album: AlbumResponseDto) => {
   const description = $t('album_delete_confirmation_description');
   const prompt = `${confirmation} ${description}`;
 
-  return modalManager.showDialog({ prompt });
+  return modalManager.showDialog({ prompt, icon: lemurIconPath });
 };
 
 interface AlbumSortOption {
